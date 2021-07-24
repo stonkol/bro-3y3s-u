@@ -1,0 +1,47 @@
+<!--
+0.1 
+0.11 learn ::before ::after
+0.12 learn flex, display
+--- HECHO ----
+0.2 learn how to move eyes
+0.21 char?
+-->
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Eye move</title>
+    <link rel="stylesheet" href="bigbrosimple.scss">
+</head>
+
+
+<body>
+  <section class="move-area">
+  <div class='.container'>
+    <div class='eye'></div>
+    <div class='eye'></div>
+  </div>
+  </section>
+
+
+<script>
+  $(".move-area").mousemove(function(event) {
+  
+  var eye = $(".eye");
+  var x = (eye.offset().left) + (eye.width() / 2);
+  var y = (eye.offset().top) + (eye.height() / 2);
+  var rad = Math.atan2(event.pageX - x, event.pageY - y);
+  var rot = (rad * (180 / Math.PI) * -1) + 180;
+  eye.css({
+    '-webkit-transform': 'rotate(' + rot + 'deg)',
+    '-moz-transform': 'rotate(' + rot + 'deg)',
+    '-ms-transform': 'rotate(' + rot + 'deg)',
+    'transform': 'rotate(' + rot + 'deg)'
+  });
+});
+</script>
+
+
+</body>
+</html>
