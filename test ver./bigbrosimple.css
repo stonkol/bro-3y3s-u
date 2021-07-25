@@ -16,7 +16,6 @@
   height: 30px;
   width: 30px;
   background: #CCC;
-  -webkit-box-shadow: inset 0 0 2px #25172E;
   box-shadow: inset 0 0 2px #25172E;
 }
 
@@ -31,4 +30,3 @@
   border-radius: 50%;
   content: " ";
 }
-/*# sourceMappingURL=bigbrosimple.css.map */
