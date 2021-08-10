@@ -1,47 +1,46 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #CCCCCC;
+  background: #cccccc;
 }
-.face{
+.face {
   width: 300px;
   height: 300px;
   border-radius: 50%;
 
   display: flex;
   position: relative;
- justify-content: center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #ffcd00;
- -moz-box-shadow:     2px 2px 7px #656565;
- -webkit-box-shadow:  2px 2px 7px #656565;
- box-shadow:          2px 2px 7px #656565;
+  -moz-box-shadow: 2px 2px 7px #656565;
+  -webkit-box-shadow: 2px 2px 7px #656565;
+  box-shadow: 2px 2px 7px #656565;
 }
-.face::before {  
-  content: '';
+.face::before {
+  content: "";
   position: absolute;
   top: 180px;
-  width:130px;
+  width: 130px;
   height: 80px;
-  background: #EE2020;
+  background: #ee2020;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
   transition: 0.3s;
-  -moz-box-shadow:    inset 1px 1px 5px 1.5px #4D0404;
-  -webkit-box-shadow: inset 1px 1px 5px 1.5px #4D0404;
-  box-shadow:         inset 1px 1px 5px 1.5px #4D0404;
+  -moz-box-shadow: inset 1px 1px 5px 1.5px #4d0404;
+  -webkit-box-shadow: inset 1px 1px 5px 1.5px #4d0404;
+  box-shadow: inset 1px 1px 5px 1.5px #4d0404;
 }
 .face:hover::before {
   top: 200px;
-  width:90px;
+  width: 90px;
   height: 15px;
   background: #310707;
   border-radius: 5%;
@@ -59,18 +58,28 @@ body {
   background: #eed;
   margin: 0 15px;
   border-radius: 50%;
-  -moz-box-shadow:    inset 0 0 2px #25172E;
-  -webkit-box-shadow: inset 0 0 2px #25172E;
-  box-shadow:         inset 0 0 2px #25172E;
+  -moz-box-shadow: inset 0 0 2px #25172e;
+  -webkit-box-shadow: inset 0 0 2px #25172e;
+  box-shadow: inset 0 0 2px #25172e;
 }
 .eyes .eye::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 25px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background: #211;
   border-radius: 50%;
+}
+
+
+///// NEWWWWW //////////
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+ // transform: scaleX(-1); // This invert hrizontally
 }
