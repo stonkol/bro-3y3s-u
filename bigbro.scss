@@ -7,18 +7,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
   min-height: 100vh;
-  background: #cccccc;
+  background: #333;
 }
+
+////////////// NEWWWWW //////////
+
+// from dudley storey codepen ///
+#header {
+  width: 100%;
+  height: 336px;
+  text-align: center;
+}
+#header img {
+  margin-top: 20px;
+}
+////////////////////////////
+img {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+ // transform: scaleX(-1); // This invert hrizontally
+}
+
+
 .face {
   width: 300px;
   height: 300px;
   border-radius: 50%;
 
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+ display: flex;
+ position: relative;
+ justify-content: center;
+ align-items: center;
   background: #ffcd00;
   -moz-box-shadow: 2px 2px 7px #656565;
   -webkit-box-shadow: 2px 2px 7px #656565;
@@ -72,14 +99,4 @@ body {
   height: 40px;
   background: #211;
   border-radius: 50%;
-}
-
-
-///// NEWWWWW //////////
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
- // transform: scaleX(-1); // This invert hrizontally
 }

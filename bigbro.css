@@ -8,8 +8,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   min-height: 100vh;
-  background: #CCCCCC;
+  background: #333;
+}
+
+#header {
+  width: 100%;
+  height: 336px;
+  text-align: center;
+}
+
+#header img {
+  margin-top: 20px;
+}
+
+img {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .face {
@@ -25,16 +46,16 @@ body {
 }
 
 .face::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 180px;
   width: 130px;
   height: 80px;
-  background: #EE2020;
+  background: #ee2020;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
   transition: 0.3s;
-  box-shadow: inset 1px 1px 5px 1.5px #4D0404;
+  box-shadow: inset 1px 1px 5px 1.5px #4d0404;
 }
 
 .face:hover::before {
@@ -59,11 +80,11 @@ body {
   background: #eed;
   margin: 0 15px;
   border-radius: 50%;
-  box-shadow: inset 0 0 2px #25172E;
+  box-shadow: inset 0 0 2px #25172e;
 }
 
 .eyes .eye::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 25px;
