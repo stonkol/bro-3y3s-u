@@ -14,6 +14,10 @@
 
 4. Beck: the "seat heads" moves one of his eyes the other eye blink when you don't move the mouse.
 
+5. Tame Impala - One eye that is the ball
+
+6. Dalí eye - A knife is moving around the eye like the eye ball moves
+
 - With alt tag the search engines can find your images.
 
 ## HELPERS
